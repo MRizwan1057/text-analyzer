@@ -1,0 +1,36 @@
+body {
+  overflow-x: hidden;
+  background: rgb(247, 219, 231);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(247, 219, 231, 1) 0%,
+    rgba(225, 231, 237, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(247, 219, 231, 1) 0%,
+    rgba(225, 231, 237, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(247, 219, 231, 1) 0%,
+    rgba(225, 231, 237, 1) 100%
+  );
+  background-image: url("../public/bgt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+textarea {
+  background: rgb(255, 207, 190) !important;
+}
+.preview {
+  background: rgb(211, 237, 251) !important;
+}
+
+.sum_items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
