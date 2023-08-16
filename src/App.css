@@ -34,3 +34,7 @@ textarea {
   gap: 2rem;
   align-items: center;
 }
+.preview {
+  font-size: 1.2rem;
+  font-weight: 500;
+}

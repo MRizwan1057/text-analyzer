@@ -99,7 +99,7 @@ const Texter = () => {
                 </p>
               </div>
               <p className="py-2">
-                Design & Developed by |<b> M.Rizwan</b>
+                Designed & Developed by |<b> M.Rizwan</b>
               </p>
             </div>
           </div>
