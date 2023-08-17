@@ -55,7 +55,7 @@ const Texter = () => {
       <div className="container my-5">
         <div className="row text-center">
           <div className="col-md-8 mx-auto">
-            <h1 className="text-center">Text Analyzer</h1>
+            <h1 className="text-center shadow-sm rounded">Text Analyzer</h1>
             <form className="p-3 txtr_form shadow rounded">
               <h5>Enter text below to analyze</h5>
 
@@ -111,7 +111,7 @@ const Texter = () => {
             </form>
           </div>
           <div className="col-md-8 mx-auto">
-            <h1 className="text-center py-4">Text Summary</h1>
+            <h1 className="text-center py-4 shadow-sm rounded">Text Summary</h1>
             <div className="sum_wrp p-5 shadow rounded">
               <div className="sum_items">
                 <span className="btn btn-dark my-2 p-2 rounded">
