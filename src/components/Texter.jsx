@@ -12,16 +12,19 @@ const Texter = () => {
   const handleChange = (e) => {
     setText(e.target.value);
   };
+
   const upHandler = () => {
     validateText();
     let newText = text.toUpperCase();
     setText(newText);
   };
+
   const loHandler = () => {
     validateText();
     let newText = text.toLowerCase();
     setText(newText);
   };
+
   const cpHandler = () => {
     validateText();
     // const words = text.split("");
@@ -31,15 +34,18 @@ const Texter = () => {
     );
     setText(capitalized.join(" "));
   };
+
   const clHandler = () => {
     validateText();
     setText("");
   };
+
   const exspHandler = () => {
     validateText();
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
   };
+
   const copHandler = async () => {
     validateText();
     try {
@@ -58,7 +64,6 @@ const Texter = () => {
             <h1 className="text-center shadow-sm rounded">Text Analyzer</h1>
             <form className="p-3 txtr_form shadow rounded">
               <h5>Enter text below to analyze</h5>
-
               <textarea
                 className="form-control border border-2 border-dark rounded mb-3"
                 id="txt"
@@ -99,7 +104,7 @@ const Texter = () => {
                 className="btn btn-primary m-2 fw-bold shadow-sm"
                 onClick={copHandler}
               >
-                Copyto clipboard
+                Copy Text
               </button>
               <button
                 type="button"
@@ -121,7 +126,13 @@ const Texter = () => {
               </div>
               <div className="sum_items">
                 <span className="btn btn-dark my-2 p-2 rounded">Words</span>
-                <span>{text.split(" ").length}</span>
+                <span>
+                  {
+                    text.split(/\s+/).filter((element) => {
+                      return element.length !== 0;
+                    }).length
+                  }
+                </span>
               </div>
               <div className="sumr_items">
                 <h4>Preview</h4>
